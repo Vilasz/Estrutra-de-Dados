@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int m;
+  int a;
+  float i;
+
+  cin >> m;
+  cin >> a;
+
+  i = m/(a*a);
+
+  if (i<17){
+    cout << "Muito abaixo do peso";
+  }else if(17<=i && i<18.5){
+    cout << "Abaixo do peso";
+  }else if(18.5<=i && i<25){
+    cout << "Peso normal";
+  }else if(25<=i && i<30){
+    cout << "Acima do peso";
+  }else if(30<=i && i<35){
+    cout << "Obesidade";
+  }else if(35<=i && i<40){
+    cout << "Obesidade severa";
+  }else if(i>40){
+    cout << "Obesidade mórbida";
+  }
+
+  return 0;
+
+}
